@@ -1,5 +1,5 @@
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-helloworld-deployment
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: nginx-helloworld
-        image: machiiing/ngnops:latest
+        image: machiiine/ngnops:latest
         ports:
         - containerPort: 80
